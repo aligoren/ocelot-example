@@ -1,0 +1,22 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/api/uzak-endpoint/{path}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "microservice.domaini.com",
+                    "Port": 80
+                }
+            ],
+            "UpstreamPathTemplate": "/gateway-endpointi/{path}",
+            "UpstreamHttpMethod": [
+                "Get"
+            ]
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "http://localhost:46677"
+    }
+}
+
